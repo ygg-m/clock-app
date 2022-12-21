@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fefcf3;
+  color: #222222;
+  font-family: sans-serif;
+}
+
+#clock {
+  font-size: 10rem;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  width: 100vw;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > h2 {
+  font-weight: 400;
+}
