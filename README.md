@@ -10,4 +10,5 @@ The website is hosted by `GitHub Pages` at: https://ygg-m.github.io/clock-app/
 # 🎯 Goals
 
 - [x] Make the clock work
+- [x] Show current date
 - [x] Publish it
