@@ -11,6 +11,10 @@
   font-size: 10rem;
 }
 
+#date {
+  font-size: 3rem;
+}
+
 .container {
   text-align: center;
   padding: 2rem;

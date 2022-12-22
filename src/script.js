@@ -1,12 +1,21 @@
 function displayTime() {
-  let time = new Date();
-  let hours = time.getHours().toString().padStart(2, "0");
-  let minutes = time.getMinutes().toString().padStart(2, "0");
-  let seconds = time.getSeconds().toString().padStart(2, "0");
+  let today = new Date();
+  let hours = today.getHours().toString().padStart(2, "0");
+  let minutes = today.getMinutes().toString().padStart(2, "0");
+  let seconds = today.getSeconds().toString().padStart(2, "0");
   let clockElement = document.getElementById("clock");
   clockElement.innerText = hours + ":" + minutes + ":" + seconds;
 }
 
-setInterval(displayTime, 1000);
+function displayDate() {
+  let today = new Date();
+  let date = today.toDateString();
+  let dateElement = document.getElementById("date");
+  dateElement.innerText = date;
+}
 
+setInterval(displayTime, 1000);
+setInterval(displayDate, 1000);
+
+displayDate();
 displayTime();
