@@ -2,17 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #fefcf3;
   color: #222222;
   font-family: sans-serif;
 }
 
+body {
+  background-color: #fefcf3;
+}
+
 #clock {
-  font-size: 10rem;
+  font-size: clamp(2rem, 15vw, 10rem);
 }
 
 #date {
-  font-size: 3rem;
+  font-size: clamp(1rem, 8vw, 3rem);
 }
 
 .container {
@@ -25,5 +28,6 @@
 }
 
 .container > h2 {
+  font-size: clamp(1rem, 8vw, 3rem);
   font-weight: 400;
 }
